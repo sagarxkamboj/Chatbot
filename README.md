@@ -1,2 +1,2 @@
 # Chatbot
-Ai chatbot work on google gemini api
+Ai chatbot work on preplexity  api

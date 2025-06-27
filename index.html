@@ -6,9 +6,9 @@
     <title>Sagar's Chatbot</title>
     <link rel="stylesheet" href="chatbot.css" />
   </head>
+
   <body>
     <div class="chatbot-wrapper">
-      <!-- Robot Character -->
       <div class="robot-character">
         <div class="robot-image"></div>
         <div class="robot-actions">
@@ -18,11 +18,12 @@
         </div>
       </div>
 
-      <!-- Chat Container -->
       <div class="chat-container">
         <div class="chat-header">
           <div class="header-icon"></div>
-          <h2>Sagar's Bot <span>AI Assistant</span></h2>
+          <h2 id="ai-assistant">
+            Sagar's Bot <span class="sagar">AI Assistant</span>
+          </h2>
         </div>
         <div class="chat-messages" id="messages">
           <div class="message bot-message">
@@ -31,30 +32,25 @@
               <span class="message-time">8:45 PM</span>
               <p>
                 Hi! I'm Sagar's AI Chatbot.<br />Nice to meet you.<br />How may
-                I help you today? Click on 😊 to send message...
+                I help you today?
               </p>
             </div>
           </div>
         </div>
-        <div class="chat-options">
-          <a
-            href="https://sagarxkambojportfolio.netlify.app/"
-            class="option-btn"
-            target="_blank"
-            >Wanna Know more??</a
-          >
-        </div>
+
         <div class="chat-input">
           <input
             type="text"
             id="userInput"
             placeholder="Write your message..."
           />
-          <button onclick="sendMessage()">😊</button>
+          <button class="send-me" onclick="sendMessage()">Send</button>
         </div>
         <div class="chat-footer">
           <p>Made with ❤️ by Sagar</p>
-          <div class="development-notice">Chatbot is under development</div>
+          <div class="development-notice">
+            Run On preplexity API (Under Developement)
+          </div>
         </div>
       </div>
     </div>
